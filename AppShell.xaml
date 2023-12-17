@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell x:Class="AirsoftCore_App.AppShell"
+       xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:views="clr-namespace:AirsoftCore_App.Views"
+       Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Página de Inicio"
+        ContentTemplate="{DataTemplate views:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        Route="LoginPage" />
+
+    <ShellContent
+        Title="Registro"
+        ContentTemplate="{DataTemplate views:RegistroPage}"
+        Route="RegistroPage" />
+
+    <ShellContent
+        Title="Productos"
+        ContentTemplate="{DataTemplate views:ProductosPage}"
+        Route="ProductosPage">
+        <ShellContent.IsVisible>
+            <OnIdiom x:TypeArguments="x:Boolean">
+                <OnIdiom.Phone>true</OnIdiom.Phone>
+                <OnIdiom.Tablet>true</OnIdiom.Tablet>
+                <OnIdiom.Desktop>true</OnIdiom.Desktop>
+            </OnIdiom>
+        </ShellContent.IsVisible>
+    </ShellContent>
+
+    <ShellContent
+        Title="Perfil"
+        ContentTemplate="{DataTemplate views:PerfilPage}"
+        Route="PerfilPage">
+        <ShellContent.IsVisible>
+            <OnIdiom x:TypeArguments="x:Boolean">
+                <OnIdiom.Phone>true</OnIdiom.Phone>
+                <OnIdiom.Tablet>true</OnIdiom.Tablet>
+                <OnIdiom.Desktop>true</OnIdiom.Desktop>
+            </OnIdiom>
+        </ShellContent.IsVisible>
+    </ShellContent>
+
+</Shell>

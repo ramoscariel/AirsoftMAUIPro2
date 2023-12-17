@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maui="http://schemas.microsoft.com/dotnet/2021/maui/essentials"
+             x:Class="AirsoftCore_App.Views.PerfilPage"
+             Title="Perfil">
+    <StackLayout>
+        <Entry x:Name="entryNuevoUsuario" Placeholder="Nuevo Nombre de Usuario" />
+        <Entry x:Name="entryNuevaContraseña" Placeholder="Nueva Contraseña" IsPassword="True" />
+        <Button Text="Guardar Cambios" Clicked="OnGuardarCambiosClicked" BackgroundColor="#800020" TextColor="White"/>
+        <Button Text="Subir Foto" Clicked="OnSubirFotoClicked" BackgroundColor="#800020" TextColor="White"/>
+        <Button Text="Cerrar Sesión" Clicked="OnCerrarSesionClicked" BackgroundColor="#800020" TextColor="White"/>
+    </StackLayout>
+</ContentPage>

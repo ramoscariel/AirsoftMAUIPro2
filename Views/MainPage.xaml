@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AirsoftCore_App.Views.MainPage"
+             BackgroundColor="#5e5e5e">
+
+    <StackLayout VerticalOptions="CenterAndExpand" Spacing="20">
+        <Label Text="Bienvenido" FontSize="Large" FontFamily="Arial, Bold" CharacterSpacing="5" TextColor="White" HorizontalOptions="CenterAndExpand" Margin="0,0,0,20"/>
+        <Image Source="logo.jpg" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" HeightRequest="200" WidthRequest="200"/>
+        <Button Text="Iniciar Sesión" Clicked="IniciarSesion_Clicked" BackgroundColor="#800020" TextColor="White"/>
+        <Button Text="Registrarse" Clicked="Registrarse_Clicked" BackgroundColor="#800020" TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>

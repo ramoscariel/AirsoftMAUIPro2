@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AirsoftCore_App.Models"
+             x:Class="AirsoftCore_App.Views.RegistroPage"
+             Title="Registro">
+    <StackLayout>
+        <Entry x:Name="entryNuevoUsuario" Placeholder="Nuevo Nombre de Usuario" />
+        <Entry x:Name="entryNuevaContraseña" Placeholder="Nueva Contraseña" IsPassword="True" TextChanged="OnEntryNuevaContraseñaTextChanged" />
+        <Button Text="Registrar" Clicked="OnBotonRegistrarClicked" BackgroundColor="#800020" TextColor="White"/>
+        <Button Text="Regresar a Inicio de Sesión" Clicked="OnBotonRegresarClicked" BackgroundColor="#800020" TextColor="White"/>
+    </StackLayout>
+</ContentPage>
